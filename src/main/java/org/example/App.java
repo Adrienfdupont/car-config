@@ -1,6 +1,8 @@
 package org.example;
 
 
+import org.example.pojo.Beaufy;
+import org.example.pojo.Car;
 import org.example.pojo.Option;
 
 /**
@@ -21,5 +23,6 @@ public class App
         /* accueil et présentation */
         System.out.println("Bienvenue dans notre concession, je vous invite à choisir" +
                 " le type de voiture qui vous intéresserait le plus");
+
     }
 }

@@ -13,4 +13,8 @@ public class Option {
         this.name = name;
         this.price = price;
     }
+
+    public int getPrice() {
+        return price;
+    }
 }
