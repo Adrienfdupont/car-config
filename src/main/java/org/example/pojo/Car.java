@@ -7,17 +7,17 @@ import java.util.List;
 
 public class Car {
     private String numberPlate;
-    private Integer sum;
+    private Integer price;
     private List<Option> options = new ArrayList<>();
 
     public Car(){
         this.numberPlate = "";
-        this.sum = 0;
+        this.price = 0;
     }
 
-    public Car(String numberPlate) {
+    public Car(String numberPlate, int price) {
         this.numberPlate = numberPlate;
-        this.sum = 0;
+        this.price = price;
     }
 
     // getter and setter
@@ -29,12 +29,12 @@ public class Car {
         this.numberPlate = numberPlate;
     }
 
-    public Integer getSum() {
-        return sum;
+    public Integer getPrice(){
+        return price;
     }
 
     public void setSum(Integer sum) {
-        this.sum = sum;
+        this.price = sum;
     }
 
     public List<Option> getOptions() {
@@ -60,6 +60,6 @@ public class Car {
     // add option and set sum
     public void addOption(Option option) {
         this.options.add(option);
-        this.sum += option.getPrice();
+        this.price += option.getPrice();
     }
 }

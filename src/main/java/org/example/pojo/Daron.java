@@ -9,13 +9,13 @@ public class Daron extends  Car{
     public Daron(){
         super();
         this.type = returnType(Name.Daron);
-        this.setSum(this.getSum()+price);
+        this.setSum(this.getPrice()+price);
     };
 
     public Daron(String numberPlate){
-        super(numberPlate);
+        super(numberPlate, Daron.price);
         this.type = returnType(Name.Daron);
-        this.setSum(this.getSum()+price);
+        this.setSum(this.getPrice()+price);
     };
 
     public String getType() {

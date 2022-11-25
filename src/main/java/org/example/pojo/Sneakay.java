@@ -9,13 +9,13 @@ public class Sneakay extends Car{
     public Sneakay(){
         super();
         this.type = returnType(Name.Sneakay);
-        this.setSum(this.getSum()+price);
+        this.setSum(this.getPrice()+price);
     };
 
     public Sneakay(String numberPlate){
-        super(numberPlate);
+        super(numberPlate, Sneakay.price);
         this.type = returnType(Name.Sneakay);
-        this.setSum(this.getSum()+price);
+        this.setSum(this.getPrice()+price);
     };
 
     public String getType() {

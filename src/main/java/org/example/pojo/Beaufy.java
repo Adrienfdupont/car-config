@@ -10,13 +10,13 @@ public class Beaufy extends  Car{
     public Beaufy(){
         super();
         this.type = returnType(Name.Beaufy);
-        this.setSum(this.getSum()+price);
+        this.setSum(this.getPrice() + price);
     };
 
     public Beaufy(String numberPlate){
-        super(numberPlate);
+        super(numberPlate, Beaufy.price);
         this.type = returnType(Name.Beaufy);
-        this.setSum(this.getSum()+price);
+        this.setSum(this.getPrice() + price);
     };
 
     public String getType() {

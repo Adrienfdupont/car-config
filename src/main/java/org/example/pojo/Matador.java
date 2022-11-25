@@ -9,13 +9,13 @@ public class Matador extends Car{
     public Matador(){
         super();
         this.type = returnType(Name.Matador);
-        this.setSum(this.getSum()+price);
+        this.setSum(this.getPrice()+price);
     };
 
     public Matador(String numberPlate){
-        super(numberPlate);
+        super(numberPlate, Matador.price);
         this.type = returnType(Name.Matador);
-        this.setSum(this.getSum()+price);
+        this.setSum(this.getPrice()+price);
     };
 
     public String getType() {
