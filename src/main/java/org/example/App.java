@@ -1,9 +1,12 @@
 package org.example;
 
 
-import org.example.pojo.Beaufy;
-import org.example.pojo.Car;
-import org.example.pojo.Option;
+import org.example.pojo.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Stack;
 
 /**
  * Hello world!
@@ -11,6 +14,7 @@ import org.example.pojo.Option;
  */
 public class App 
 {
+
     public static void main( String[] args )
     {
         /* initialisation des options */
