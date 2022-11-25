@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ca53167-0a5f-4409-bb1f-720f0546d046" name="Changes" comment="test push">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/enumGlobal/Type.java" afterDir="false" />
+    <list default="true" id="6ca53167-0a5f-4409-bb1f-720f0546d046" name="Changes" comment="récupération input type de véhicule">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Beaufy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Beaufy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/enumGlobal/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/enumGlobal/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/enumGlobal/Type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Beaufy.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Daron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Daron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Matador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Matador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Daron.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Matador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Option.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Sneakay.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +78,7 @@
       <workItem from="1669053232158" duration="28000" />
       <workItem from="1669131096725" duration="187000" />
       <workItem from="1669238755715" duration="2625000" />
-      <workItem from="1669327515436" duration="5024000" />
+      <workItem from="1669327515436" duration="9258000" />
     </task>
     <task id="LOCAL-00001" summary="test push">
       <created>1669131164921</created>
@@ -91,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669327591559</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="récupération input type de véhicule">
+      <created>1669379084196</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669379084196</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test push" />
     <MESSAGE value="création branche florian" />
-    <option name="LAST_COMMIT_MESSAGE" value="création branche florian" />
+    <MESSAGE value="récupération input type de véhicule" />
+    <option name="LAST_COMMIT_MESSAGE" value="récupération input type de véhicule" />
   </component>
 </project>

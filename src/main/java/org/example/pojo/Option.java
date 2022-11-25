@@ -17,4 +17,8 @@ public class Option {
     public int getPrice() {
         return price;
     }
+
+    public String getName(){
+        return name;
+    }
 }
