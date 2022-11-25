@@ -7,6 +7,7 @@ public class Car {
     private String name;
     private Integer price;
     private List<Option> options = new ArrayList<>();
+    private String color;
 
     public Car(){
         this.price = 0;
@@ -44,5 +45,13 @@ public class Car {
 
     public String getName(){
         return this.name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }

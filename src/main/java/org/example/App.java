@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.enumGlobal.Color;
 import org.example.enumGlobal.Name;
 import org.example.pojo.Car;
 import org.example.pojo.Option;
@@ -59,8 +60,9 @@ public class App
                 while (!verif) {
                     input = sc.next();
                     for (Name name : Name.values()) {
-                        if (input.equals(name.toString())) {
+                        if (input.toLowerCase().equals(name.toString().toLowerCase())) {
                             verif = true;
+                            input = name.toString();
                         }
                     }
                     if (!verif) System.out.println("Type de véhicule incorrect, veuillez réessayer.");
@@ -106,12 +108,31 @@ public class App
                     verif = false;
                 }
 
+                // Choisir la couleur
+                System.out.println("Veuillez sélectionner la couleur de votre choix");
+                for (Color color : Color.values()) {
+                    System.out.println(color);
+                }
+
+                while (!verif) {
+                    input = sc.next();
+                    for (Color color : Color.values()) {
+                        if (input.toLowerCase().equals(color.toString().toLowerCase())) {
+                            verif = true;
+                        }
+                    }
+                    if (!verif) System.out.println("couleur incorrecte, veuillez réessayer.");
+                }
+                car.setColor(input);
+                verif = false;
+
 
                 // Présentation du véhicule
                 System.out.println("Vous avez choisi un " + car.getName() + " avec le(s) option(s) ci-dessous:");
                 for (int i = 0; i < car.getOptions().size(); i++) {
                     System.out.println("- " + car.getOptions().get(i).getName());
                 }
+                System.out.println("Livrée en " + car.getColor());
                 System.out.println("Cela vous coûtera " + car.getPrice() + " €.");
                 System.out.println("Souhaitez-vous recommencer votre commande ?");
 

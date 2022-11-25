@@ -1,9 +1,9 @@
 package org.example.enumGlobal;
 
 public enum Color {
-    BLUE,
-    GREEN,
-    YELLOW,
+    BLEU,
+    VERT,
+    JAUNE,
     ORANGE,
-    RED
+    ROUGE
 }
