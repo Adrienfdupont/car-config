@@ -1,6 +1,6 @@
 package org.example.enumGlobal;
 
-public enum Name {
+public enum Type {
     Sedan,
     Break,
     SUV,

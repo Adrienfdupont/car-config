@@ -5,17 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60784eef-f41b-4895-bbe4-2b31a298b607" name="Changes" comment="ajout couleur et input permis en minuscule">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Break.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Coupe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Sedan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Suv.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/enumGlobal/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/enumGlobal/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Car.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="boucle-main" />
+        <entry key="$PROJECT_DIR$" value="color" />
       </map>
     </option>
   </component>
@@ -30,6 +45,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2I3UruEqELyYeCqZF7M7WwuBg1H" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,6 +56,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -53,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669409964118</updated>
-      <workItem from="1669409965849" duration="2276000" />
+      <workItem from="1669409965849" duration="5034000" />
     </task>
     <task id="LOCAL-00001" summary="ajout couleur et input permis en minuscule">
       <created>1669411355381</created>
@@ -62,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669411355381</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ajout couleur et input permis en minuscule">
+      <created>1669414466082</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669414466082</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

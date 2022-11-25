@@ -1,9 +1,8 @@
 package org.example;
 
 import org.example.enumGlobal.Color;
-import org.example.enumGlobal.Name;
-import org.example.pojo.Car;
-import org.example.pojo.Option;
+import org.example.enumGlobal.Type;
+import org.example.pojo.*;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -34,7 +33,6 @@ public class App
         options.add(new Option("5Doors", 700));
 
         String input = "";
-        Car car;
         boolean verif = false;
         boolean choixfinal = false;
 
@@ -43,6 +41,10 @@ public class App
 
         try {
             while (!choixfinal) {
+                Sedan sedan = new Sedan();
+                Break breakk = new Break();
+                Coupe coupe = new Coupe();
+                Suv suv = new Suv();
 
                 // accueil et présentation
                 System.out.println("Bienvenue dans notre concession, je vous invite à choisir" +
@@ -50,48 +52,25 @@ public class App
 
                 // présentation des modèles
                 System.out.println("Rentrez le type de véhicule de votre choix:");
-                for (Name type : Name.values()) {
+                for (Type type : Type.values()) {
                     System.out.print(type + " ");
                 }
                 System.out.println();
 
 
                 // récupérer le type de véhicule souhaité par le client
+                String modele = "";
                 while (!verif) {
                     input = sc.next();
-                    for (Name name : Name.values()) {
+                    for (Type name : Type.values()) {
                         if (input.toLowerCase().equals(name.toString().toLowerCase())) {
                             verif = true;
-                            input = name.toString();
+                            modele = name.toString();
                         }
                     }
                     if (!verif) System.out.println("Type de véhicule incorrect, veuillez réessayer.");
                 }
-
                 verif = false;
-
-                // instancier la voiture
-                int basePrice = 0;
-                switch (input) {
-                    case "Sedan":
-                        basePrice = 24500;
-                        break;
-                    case "Break":
-                        basePrice = 26500;
-                        break;
-                    case "SUV":
-                        basePrice = 22000;
-                        break;
-                    case "Coupe":
-                        basePrice = 32000;
-                        break;
-                }
-
-
-                car = new Car(basePrice, input);
-
-                System.out.println("Vous recherchez un " + input + ". Le prix de base est de " + car.getPrice() + " €.");
-
 
                 // Choisir les options à ajouter
                 for (int i = 0; i < options.size(); i++) {
@@ -100,7 +79,16 @@ public class App
                     while (!verif) {
                         input = sc.next();
                         if (input.equals("oui")) {
-                            car.addOption(options.get(i));
+                            switch (modele){
+                                case "Sedan":
+                                    sedan.addOption(options.get(i));
+                                case "Break":
+                                    breakk.addOption(options.get(i));
+                                case "SUV":
+                                    suv.addOption(options.get(i));
+                                case "Coupe":
+                                    coupe.addOption(options.get(i));
+                            }
                             verif = true;
                         } else if (input.equals("non")) verif = true;
                         else System.out.println("Veuillez choisir par oui ou non.");
@@ -123,17 +111,53 @@ public class App
                     }
                     if (!verif) System.out.println("couleur incorrecte, veuillez réessayer.");
                 }
-                car.setColor(input);
+                switch (modele){
+                    case "Sedan":
+                        sedan.setColor(input);
+                    case "Break":
+                        breakk.setColor(input);
+                    case "SUV":
+                        suv.setColor(input);
+                    case "Coupe":
+                        coupe.setColor(input);
+                }
                 verif = false;
 
 
                 // Présentation du véhicule
-                System.out.println("Vous avez choisi un " + car.getName() + " avec le(s) option(s) ci-dessous:");
-                for (int i = 0; i < car.getOptions().size(); i++) {
-                    System.out.println("- " + car.getOptions().get(i).getName());
+                System.out.println("Vous avez choisi un " + modele + " avec le(s) option(s) ci-dessous:");
+
+                switch (modele){
+                    case "Sedan":
+                        for (int i = 0; i < sedan.getOptions().size(); i++) {
+                            System.out.println("- " + sedan.getOptions().get(i).getName());
+                        }
+                        System.out.println("Livrée en " + sedan.getColor());
+                        System.out.println("Cela vous coûtera " + sedan.getPrice() + " €.");
+                        break;
+                    case "Break":
+                        for (int i = 0; i < breakk.getOptions().size(); i++) {
+                            System.out.println("- " + breakk.getOptions().get(i).getName());
+                        }
+                        System.out.println("Livrée en " + breakk.getColor());
+                        System.out.println("Cela vous coûtera " + breakk.getPrice() + " €.");
+                        break;
+                    case "SUV":
+                        for (int i = 0; i < suv.getOptions().size(); i++) {
+                            System.out.println("- " + suv.getOptions().get(i).getName());
+                        }
+                        System.out.println("Livrée en " + suv.getColor());
+                        System.out.println("Cela vous coûtera " + suv.getPrice() + " €.");
+                        break;
+                    case "Coupe":
+                        for (int i = 0; i < coupe.getOptions().size(); i++) {
+                            System.out.println("- " + coupe.getOptions().get(i).getName());
+                        }
+                        System.out.println("Livrée en " + coupe.getColor());
+                        System.out.println("Cela vous coûtera " + coupe.getPrice() + " €.");
+                        break;
                 }
-                System.out.println("Livrée en " + car.getColor());
-                System.out.println("Cela vous coûtera " + car.getPrice() + " €.");
+
                 System.out.println("Souhaitez-vous recommencer votre commande ?");
 
                 while (!verif) {

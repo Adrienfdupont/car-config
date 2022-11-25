@@ -9,14 +9,8 @@ public class Car {
     private List<Option> options = new ArrayList<>();
     private String color;
 
-    public Car(){
-        this.price = 0;
-        this.name = "";
-    }
-
-    public Car(int price, String name) {
+    public Car(int price) {
         this.price = price;
-        this.name = name;
     }
 
     // getter and setter
